@@ -1,0 +1,361 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lostGame {
+  filter: grayscale(60%);
+}
+
+.goBackButton {
+  z-index: 2;
+  font-size: xx-large;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  cursor: pointer;
+}
+.grid {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: #ffc797;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 3px;
+}
+
+.gridItem,
+.numberSquare {
+  border-radius: 5px;
+  position: relative;
+  font-size: 60px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 244, 169);
+  width: 120px;
+  height: 120px;
+  margin: 2px;
+  color: white;
+  text-shadow: -1px -1px 0 rgb(0, 32, 61), 1px -1px 0 rgb(0, 32, 61), -1px 1px 0 rgb(0, 32, 61),
+    1px 1px 0 rgb(0, 32, 61);
+}
+
+.numberSquare {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+  position: absolute;
+  border-radius: 5px;
+  z-index: 1;
+  right: -2px;
+}
+.animate1 {
+  z-index: 2;
+  position: absolute;
+  width: 120px;
+  animation: animate1 0.2s;
+}
+
+@keyframes animate1 {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: -124px;
+  }
+}
+
+.animate2 {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate2 0.2s;
+}
+
+@keyframes animate2 {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: -248px;
+  }
+}
+
+.animate3 {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate3 0.2s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: -372px;
+  }
+}
+
+.animate0 {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate0 0.2s;
+}
+
+@keyframes animate0 {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: -2px;
+  }
+}
+
+// leftanimation
+
+.animate1l {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate1l 0.2s;
+}
+
+@keyframes animate1l {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: 124px;
+  }
+}
+
+.animate2l {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate2l 0.2s;
+}
+
+@keyframes animate2l {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: 248px;
+  }
+}
+
+.animate3l {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate3l 0.2s;
+}
+
+@keyframes animate3l {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: 372px;
+  }
+}
+
+.animate0l {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate0l 0.2s;
+}
+
+@keyframes animate0l {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: -2px;
+  }
+}
+
+//down
+
+.animate1d {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate1d 0.2s;
+}
+
+@keyframes animate1d {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 124px;
+  }
+}
+
+.animate2d {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate2d 0.2s;
+}
+
+@keyframes animate2d {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: 248px;
+  }
+}
+
+.animate3d {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate3d 0.2s;
+}
+
+@keyframes animate3d {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: 372px;
+  }
+}
+
+.animate0d {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate0l 0.2s;
+}
+
+@keyframes animate0d {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: -2px;
+  }
+}
+
+///////up
+
+.animate1u {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate1u 0.2s;
+}
+
+@keyframes animate1u {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: -124px;
+  }
+}
+
+.animate2u {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate2u 0.2s;
+}
+
+@keyframes animate2u {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: -248px;
+  }
+}
+
+.animate3u {
+  z-index: 2;
+  position: absolute;
+
+  width: 120px;
+  animation: animate3u 0.2s;
+}
+
+@keyframes animate3u {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: -372px;
+  }
+}
+
+.animate0u {
+  z-index: 2;
+  position: absolute;
+
+  width: -120px;
+  animation: animate0u 0.2s;
+}
+
+@keyframes animate0u {
+  0% {
+    right: -2px;
+  }
+
+  100% {
+    right: -2px;
+  }
+}
+
+.animateFade {
+  animation: animateFade 0.2s ease-in-out;
+}
+
+@keyframes animateFade {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
