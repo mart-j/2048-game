@@ -3,7 +3,7 @@ import Grid from './components/grid/Grid';
 import Button from './components/button/Button';
 import Score from './components/score/Score';
 import Header from './components/header/Header';
-import { GRID } from './assets/GRID';
+import { GRID } from './helpers/GRID';
 import { randomAvailableNumberGenerator } from './helpers/RandomNumberGenerator';
 import { sumNumbersToLeft, sumNumbersToRight } from './helpers/SumNumbers';
 import { transformGridIntoRows, transformGridIntoColumns } from './helpers/TransformGrid';
@@ -18,9 +18,9 @@ const App = () => {
   const [countWhenFourAppears, setCountWhenFourApperars] = useState(0);
   const [toggleMove, settoggleMove] = useState(false);
   const [youLose, setYouLose] = useState(false);
-
   const [previousGrid, setPreviousGrid] = useState<number[]>();
   const [prevPreviousGrid, setPrevPreviousGrid] = useState<number[]>();
+
   const getNewNumberIndex = useRef<number>();
   const getNewGridNumbers = useRef<number[]>([-1, -1]);
   const container = useRef<HTMLDivElement>(null);
@@ -98,7 +98,6 @@ const App = () => {
   const getOneSquareAfterMove = () => {
     const number = randomAvailableNumberGenerator(grid);
     if (number === undefined) {
-      console.log(number);
       setYouLose(true);
     }
     const newGrid = [...grid];
@@ -196,7 +195,7 @@ const App = () => {
 
   return (
     <div
-      style={{ height: '100vh'}}
+      style={{ height: '100vh' }}
       ref={container}
       tabIndex={0}
       onKeyDown={(e) => keyPressHandler(e.key)}

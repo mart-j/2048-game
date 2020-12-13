@@ -52,27 +52,28 @@ const Grid: FC<Props> = ({
   endOfAnimationHandler,
   oneMoveBack,
 }) => {
+  
   const animationCases = (i: number) => {
     return classnames({
       [styles.numberSquare]: true,
       [styles.animateFade]:
         i === getNewNumberIndex || i === getNewGridNumbers![0] || i === getNewGridNumbers![1],
-      [styles.animate0]: moveZeroStepsRight(i, rightAnimation),
-      [styles.animate1]: moveOneStepRight(grid, i, rightAnimation),
-      [styles.animate2]: moveTwoStepsRight(grid, i, rightAnimation),
-      [styles.animate3]: moveThreeStepsRight(grid, i, rightAnimation),
-      [styles.animate0l]: moveZeroStepsLeft(i, leftAnimation),
-      [styles.animate1l]: moveOneStepToLeft(grid, i, leftAnimation),
-      [styles.animate2l]: moveTwoStepsToLeft(grid, i, leftAnimation),
-      [styles.animate3l]: moveThreeStepsToLeft(grid, i, leftAnimation),
-      [styles.animate0d]: moveZeroStepsDown(i, downAnimation),
-      [styles.animate1d]: moveOneStepDown(grid, i, downAnimation),
-      [styles.animate2d]: moveTwoStepsDown(grid, i, downAnimation),
-      [styles.animate3d]: moveThreeStepsDown(grid, i, downAnimation),
-      [styles.animate0u]: moveZeroStepsUp(i, upAnimation),
-      [styles.animate1u]: moveOneStepUp(grid, i, upAnimation),
-      [styles.animate2u]: moveTwoStepsUp(grid, i, upAnimation),
-      [styles.animate3u]: moveThreeStepsUp(grid, i, upAnimation),
+      [styles.rightZero]: moveZeroStepsRight(i, rightAnimation),
+      [styles.rightOne]: moveOneStepRight(grid, i, rightAnimation),
+      [styles.rightTwo]: moveTwoStepsRight(grid, i, rightAnimation),
+      [styles.rightThree]: moveThreeStepsRight(grid, i, rightAnimation),
+      [styles.leftZero]: moveZeroStepsLeft(i, leftAnimation),
+      [styles.leftOne]: moveOneStepToLeft(grid, i, leftAnimation),
+      [styles.leftTwo]: moveTwoStepsToLeft(grid, i, leftAnimation),
+      [styles.leftThree]: moveThreeStepsToLeft(grid, i, leftAnimation),
+      [styles.downZero]: moveZeroStepsDown(i, downAnimation),
+      [styles.downOne]: moveOneStepDown(grid, i, downAnimation),
+      [styles.downTwo]: moveTwoStepsDown(grid, i, downAnimation),
+      [styles.downThree]: moveThreeStepsDown(grid, i, downAnimation),
+      [styles.upZero]: moveZeroStepsUp(i, upAnimation),
+      [styles.upOne]: moveOneStepUp(grid, i, upAnimation),
+      [styles.upTwo]: moveTwoStepsUp(grid, i, upAnimation),
+      [styles.upThree]: moveThreeStepsUp(grid, i, upAnimation),
     });
   };
 

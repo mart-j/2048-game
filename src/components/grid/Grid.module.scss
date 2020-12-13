@@ -15,6 +15,9 @@
   transform: translateY(-50%);
   padding: 10px;
   cursor: pointer;
+  background-color: rgba(13, 130, 160, 0.637);
+  padding: 20px;
+  border-radius: 50%;
 }
 .grid {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
@@ -53,125 +56,91 @@
   border-radius: 5px;
   z-index: 1;
   right: -2px;
-}
-.animate1 {
-  z-index: 2;
-  position: absolute;
   width: 120px;
-  animation: animate1 0.2s;
 }
 
-@keyframes animate1 {
+.rightOne {
+  animation: rightOne 0.2s;
+}
+
+@keyframes rightOne {
   0% {
     right: -2px;
   }
-
   100% {
     right: -124px;
   }
 }
 
-.animate2 {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate2 0.2s;
+.rightTwo {
+  animation: rightTwo 0.2s;
 }
 
-@keyframes animate2 {
+@keyframes rightTwo {
   0% {
     right: -2px;
   }
-
   100% {
     right: -248px;
   }
 }
 
-.animate3 {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate3 0.2s;
+.rightThree {
+  animation: rightThree 0.2s;
 }
 
-@keyframes animate3 {
+@keyframes rightThree {
   0% {
     right: -2px;
   }
-
   100% {
     right: -372px;
   }
 }
-
-.animate0 {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate0 0.2s;
+.rightZero {
+  animation: rightZero 0.2s;
 }
 
-@keyframes animate0 {
+@keyframes rightZero {
   0% {
     right: -2px;
   }
-
   100% {
     right: -2px;
   }
 }
 
-// leftanimation
-
-.animate1l {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate1l 0.2s;
+.leftOne {
+  animation: leftOne 0.2s;
 }
 
-@keyframes animate1l {
+@keyframes leftOne {
   0% {
     right: -2px;
   }
-
   100% {
     right: 124px;
   }
 }
 
-.animate2l {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate2l 0.2s;
+.leftTwo {
+  animation: leftTwo 0.2s;
 }
 
-@keyframes animate2l {
+@keyframes leftTwo {
   0% {
     right: -2px;
   }
-
   100% {
     right: 248px;
   }
 }
 
-.animate3l {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate3l 0.2s;
+.leftThree {
+  animation: leftThree 0.2s;
 }
 
-@keyframes animate3l {
+@keyframes leftThree {
   0% {
     right: -2px;
   }
@@ -181,15 +150,11 @@
   }
 }
 
-.animate0l {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate0l 0.2s;
+.leftZero {
+  animation: leftZero 0.2s;
 }
 
-@keyframes animate0l {
+@keyframes leftZero {
   0% {
     right: -2px;
   }
@@ -199,53 +164,37 @@
   }
 }
 
-//down
-
-.animate1d {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate1d 0.2s;
+.downOne {
+  animation: downOne 0.2s;
 }
 
-@keyframes animate1d {
+@keyframes downOne {
   0% {
     top: 0px;
   }
-
   100% {
     top: 124px;
   }
 }
 
-.animate2d {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate2d 0.2s;
+.downTwo {
+  animation: downTwo 0.2s;
 }
 
-@keyframes animate2d {
+@keyframes downTwo {
   0% {
     top: 0%;
   }
-
   100% {
     top: 248px;
   }
 }
 
-.animate3d {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate3d 0.2s;
+.downThree {
+  animation: downThree 0.2s;
 }
 
-@keyframes animate3d {
+@keyframes downThree {
   0% {
     top: 0%;
   }
@@ -255,93 +204,66 @@
   }
 }
 
-.animate0d {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate0l 0.2s;
+.downZero {
+  animation: downZero 0.2s;
 }
 
-@keyframes animate0d {
+@keyframes downZero {
   0% {
     right: -2px;
   }
-
   100% {
     right: -2px;
   }
 }
 
-///////up
-
-.animate1u {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate1u 0.2s;
+.upOne {
+  animation: upOne 0.2s;
 }
 
-@keyframes animate1u {
+@keyframes upOne {
   0% {
     top: 0px;
   }
-
   100% {
     top: -124px;
   }
 }
 
-.animate2u {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate2u 0.2s;
+.upTwo {
+  animation: upTwo 0.2s;
 }
 
-@keyframes animate2u {
+@keyframes upTwo {
   0% {
     top: 0%;
   }
-
   100% {
     top: -248px;
   }
 }
 
-.animate3u {
-  z-index: 2;
-  position: absolute;
-
-  width: 120px;
-  animation: animate3u 0.2s;
+.upThree {
+  animation: upThree 0.2s;
 }
 
-@keyframes animate3u {
+@keyframes upThree {
   0% {
     top: 0%;
   }
-
   100% {
     top: -372px;
   }
 }
 
-.animate0u {
-  z-index: 2;
-  position: absolute;
-
-  width: -120px;
-  animation: animate0u 0.2s;
+.upZero {
+  animation: upZero 0.2s;
 }
 
-@keyframes animate0u {
+@keyframes upZero {
   0% {
     right: -2px;
   }
-
   100% {
     right: -2px;
   }
